@@ -18,7 +18,12 @@ export default function RootLayout({
     <html lang="en">
       <body>
         {/* Layout UI */}
-        <main>{children}</main>
+        <div className="header"></div>
+        <div className="content">
+          <div className="sidebar"></div>
+          <main>{children}</main>
+        </div>
+        <div className="footer"></div>
       </body>
     </html>
   )
